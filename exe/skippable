@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "skippable/task_loader"
+
+task = Skippable::TaskLoader.new.by_name(ARGV.first)
+exit task.call
